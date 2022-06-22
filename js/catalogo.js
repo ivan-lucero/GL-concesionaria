@@ -26,7 +26,7 @@ const mostrarAutos = (autos) => {
         const card_auto = document.createElement("div")
         card_auto.setAttribute("class", "card card-auto")
         card_auto.innerHTML +=
-          `<img src="../imgs/autos/${auto.imagen}" class="card-img-top" alt="imagen-auto">
+          `<img src="https://ivan-lucero.github.io/GL-concesionaria/imgs/autos/${auto.imagen}" class="card-img-top" alt="imagen-auto">
           <div class="card-body">
             <h5 class="card-title">${capitalizeFirstLetter(auto.marca)} ${capitalizeFirstLetter(auto.nombre)}</h5>
             <p class="card-text">combustible: ${auto.combustible}</p>
