@@ -1,0 +1,44 @@
+
+.logo {
+  width: 150px;
+}
+
+.navbar-edit {
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 111111;
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  
+}
+.navbar-edit a {
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbar-edit a:hover {
+  color: #EEF5FC;
+}
+
+.bg-navbar {
+  background-color: #061a40;
+}
+.bg-navbar-top {
+  background: linear-gradient(90deg, rgba(6,26,64,1) 0%, rgba(6,26,64,0.7259278711484594) 83%, rgba(6,26,64,0.4822303921568627) 100%);
+}
+
+.navbar-collapse {
+  z-index: 11111111;
+}
+
+.icon-burger {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-catalogo {
+  position: unset;
+}

@@ -1,0 +1,65 @@
+[
+    {
+      "marca": "chevrolet",
+      "nombre": "cruze",
+      "combustible": "nafta",
+      "transmision": "manual",
+      "imagen": "nuevos/chevrolet-cruze.jpg" 
+    },
+    {
+      "marca": "chevrolet",
+      "nombre": "onix",
+      "combustible": "nafta",
+      "transmision": "automático",
+      "imagen": "nuevos/chevrolet-onix.jpg" 
+    },
+    {
+      "marca": "fiat",
+      "nombre": "cronos",
+      "combustible": "nafta",
+      "transmision": "automático",
+      "imagen": "nuevos/fiat-cronos.jpg" 
+    },
+    {
+      "marca": "fiat",
+      "nombre": "strada",
+      "combustible": "GNC",
+      "transmision": "manual",
+      "imagen": "nuevos/fiat-strada.jpg" 
+    },
+    {
+      "marca": "peugeot",
+      "nombre": "308",
+      "combustible": "nafta",
+      "transmision": "manual",
+      "imagen": "nuevos/peugeot-308.jpg" 
+    },
+    {
+      "marca": "peugeot",
+      "nombre": "408",
+      "combustible": "nafta",
+      "transmision": "manual",
+      "imagen": "nuevos/peugeot-408.jpg" 
+    },
+    {
+      "marca": "peugeot",
+      "nombre": "208",
+      "combustible": "nafta",
+      "transmision": "manual",
+      "imagen": "nuevos/peugeot-208.jpg" 
+    },
+    {
+      "marca": "renault",
+      "nombre": "alaskan",
+      "combustible": "diesel",
+      "transmision": "manual",
+      "imagen": "nuevos/renault-alaskan.jpg" 
+    },
+    {
+      "marca": "volkswagen",
+      "nombre": "amarok",
+      "combustible": "diesel",
+      "transmision": "automático",
+      "imagen": "nuevos/volkswagen-amarok.jpg" 
+    }
+]

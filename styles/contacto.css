@@ -1,0 +1,122 @@
+.form-titulo{
+    margin-top: 100px;
+}
+
+.form-titulo h6{
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacto{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0;
+}
+.contacto .img-form{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+
+section .form-input .form-contacto{
+    width: 70%;
+}
+
+section .form-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+section .form-input .contenedor-input{
+    text-align: left;
+    font-weight: 600;
+
+}
+form .form-warning {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--red-1);
+}
+form .input-warning {
+    border: solid 1px red;
+}
+.mensaje-exitoso {
+    margin-top: 10px;
+    color: var(--blue-2);
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+}
+.contacto .img-form img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-contacto{
+    background-color:#EAEAEA;
+    border-radius: 46px;   
+    color: black;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    padding: 50px 30px;
+    
+}
+
+.contenedor-input{
+    text-align: left; 
+    font-weight: 600;
+    margin:15px 0px;
+}
+
+.contacto .boton {
+    margin-top:10px;
+    position: relative;
+}
+
+.sucursal h6{
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px){
+    .contacto .img-form {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .form-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .form-input .form-contacto {
+        width: 100%;
+        padding: 40px 25px;
+        background-color: rgb(234, 234, 234, 0.8);
+        margin: 50px;
+        transition: .2s;
+    }
+    section .form-input .form-contacto:hover {
+        transition: .2s;
+        background-color: #EAEAEA;
+    }
+}

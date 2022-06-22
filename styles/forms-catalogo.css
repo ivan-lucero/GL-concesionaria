@@ -1,0 +1,39 @@
+.modal-edit {
+  background-color: var(--gray);
+  border-radius: 0;
+  border: none;
+  text-align: left;
+  color: var(--blue-2);
+  font-weight: 600;
+}
+
+.modal-title{
+  
+  font-weight: 800;
+  padding: 10px;
+}
+
+.contenedor-input{
+  margin: 10px;
+}
+ .modal-footer{
+  margin: 10px;
+  display: flex;
+  justify-content: left;
+ }
+ 
+ form .form-warning {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--red-1);
+}
+form .input-warning {
+  border: solid 1px red;
+}
+.mensaje-exitoso {
+  margin-top: 10px;
+  color: var(--blue-2);
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-block;
+}

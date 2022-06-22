@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!-- Fuente -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <!-- Estilos -->
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/auto-card.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/catalogo.css">
+  <link rel="stylesheet" href="../styles/filtros.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/forms-catalogo.css">
+  <link rel="stylesheet" href="../styles/swal-edit.css">
+  <link rel="shortcut icon" href="../imgs/favicon.jpg">
+  <title>Catálogo de autos - GL Concesionaria</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-navbar navbar-edit navbar-catalogo">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="../imgs/common/LOGO-Horizontal-fondoOscuro.png" alt="brand">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon icon-burger">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list .icon-burger" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </span>
+      </button>
+      <div class="collapse navbar-collapse d" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo.html" >Catalogo</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#nosotros">Nosotros
+              
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../imgs/banners/banner-peugeot-208.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../imgs/banners/banner-renault-alaskan.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../imgs/banners/banner-chevrolet-cruze.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section class="catalogo-main container">
+    <div class="container container-title">
+      <h1 class="container catalogo-title">Catálogo de autos</h1>
+      <button class="boton-filtro boton-abrir">Filtros <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-filter-left" viewBox="0 0 16 16">
+        <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/></svg>
+      </button>
+    </div>
+    
+    <div class="filtros">
+      <h3 class="filtros-title">Filtros</h3>
+     
+      <form id="filtros-categorias">
+        <h6>Categorias</h6>
+        <div class="form-group">
+          <input type="radio" id="0kms" name="categorias" value="0kms" checked>
+          <label for="0kms">0 Kms</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="usados" name="categorias" value="usados">
+          <label for="usados">Usados</label>
+        </div>
+      </form>
+
+      <form id="filtros-marca" class="botones">
+        <h6>Marcas</h6>
+        <div class="form-group">
+          <input type="radio" id="todas" name="marcas" value="0" checked>
+          <label for="todas">Mostrar todo</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="chevrolet" name="marcas" value="chevrolet">
+          <label for="chevrolet">Chevrolet</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="fiat" name="marcas" value="fiat">
+          <label for="fiat">Fiat</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="peugeot" name="marcas" value="peugeot">
+          <label for="peugeot">Peugeot</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="renault" name="marcas" value="renault">
+          <label for="renault">Renault</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="volkswagen" name="marcas" value="volkswagen">
+          <label for="volkswagen">Volkswagen</label>
+        </div>
+      </form>
+      <button class="boton-cerrar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+        </svg>
+      </button>
+    </div>
+    
+    </div>
+    <article class="catalogo-container container">
+      <form id="buscador" class="container-fluid">
+        <div class="buscador-container">
+          <input type="text" class="form-control buscador" placeholder="Buscador"/>
+          <button class="boton-buscador"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+      <div id="catalogo" class="container cards-container"></div>
+    </article>
+  </section>
+
+  <!-- Modal Contacto-->
+  <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content modal-edit">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Hacé tu consulta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="form-contacto">
+          <div class="modal-body">
+            <div class="contenedor-input">
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre">
+              <span id="warning-nombre" class="form-warning"></span>
+            </div>
+            <div class="contenedor-input">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email">
+              <span id="warning-email" class="form-warning"></span>
+            </div>
+            <div class="contenedor-input">
+              <label for="telefono">Telefono:</label>
+              <input type="text" class="form-control" id="telefono" name="telefono">
+              <span id="warning-telefono" class="form-warning"></span>
+            </div>
+            <div class="contenedor-input">
+              <label for="horario">Horario de disponibilidad:</label>
+              <select class="form-control" name="horario">
+                <option selected value="0">Seleccionar</option>
+                <option value="1">De 9 a 12 hs</option>
+                <option value="2">De 12 a 15 hs</option>
+                <option value="3">De 15 a 18 hs</option>
+                <option value="4">De 18 a 21 hs</option>
+              </select>
+              <span id="warning-horario" class="form-warning"></span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="boton" type="submit"><span class="boton-texto">Enviar consulta</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Agendar Test-drive-->
+  <div class="modal fade" id="modalTestDrive" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-edit">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Solicitá tu Test-drive</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="form-test-drive">
+        <div class="modal-body">
+            <div class="contenedor-input">
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre">
+              <span id="warning-nombre-testdrive" class="form-warning"></span>
+            </div>
+            <div class="contenedor-input">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email">
+              <span id="warning-email-testdrive" class="form-warning"></span>
+            </div>
+
+            <div class="contenedor-input">
+              <label for="dni-container">DNI:</label>
+              <input type="text" class="form-control" name="nrodni" id="nrodni">
+              <span id="warning-dni-testdrive" class="form-warning"></span>
+            </div>
+            
+            <div class="contenedor-input">
+              <label for="telefono">Telefono:</label>
+              <input type="text" class="form-control" id="telefono" name="telefono">
+              <span id="warning-telefono-testdrive" class="form-warning"></span>
+            </div>
+
+            <div class="contenedor-input">
+              <label for="preferencia">Preferencia de contacto:</label>
+                <div>
+                  <input type="checkbox" name="preferencia-llamado" id="preferencia-contacto">
+                  <label for="preferencia-llamado">Llamado telefonico</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="preferencia-wsp" id="preferencia-contacto">
+                  <label for="preferencia-wsp">Whatsapp</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="preferencia-email" id="preferencia-contacto">
+                  <label for="preferencia-email">Email</label>
+                </div>
+            </div>
+
+            <div class="contenedor-input">
+              <label for="dia-preferencia">Dia de preferencia:</label>
+              <select class="form-control" name="dia-preferencia" id="dia-preferencia">
+                <option selected value="0">Seleccionar</option>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miercoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+              </select>
+              <span id="warning-prefdia-testdrive" class="form-warning"></span>
+            </div>
+
+            <div class="contenedor-input">
+              <label for="horario-preferencia">Horario de preferencia:</label>
+              <select class="form-control" name="horario-preferencia" id="horario-preferencia">
+                <option selected value="0">Seleccionar</option>
+                <option value="manana">Mañana</option>
+                <option value="tarde">Tarde</option>
+              </select>
+              <span id="warning-prefhorario-testdrive" class="form-warning"></span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="boton"><span class="boton-texto">Solicitar Test-drive</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="../imgs/common/LOGO-fondoOscuropng.png">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <p>Redes Sociales</p>
+        <div class="red-social">
+          <a href="https://www.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg></a>
+          <a href="https://www.instagram.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="telefono"> 
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>2664 - 123456</p>
+          <p class="direccion">Av. Ejército de los Andes 950,<br>D5700 BPB,San Luis</p>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <p>2022@Diseñado y desarrollado por Ivan Agustin Lucero y Leonardo Gallardo.<br>Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!--Alert-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--Bootstrap:-->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="../js/catalogo.js"></script>
+  <script src="../js/front-catalogo.js"></script>
+  <script src="../js/form-contacto.js"></script>
+  <script src="../js/form-test-drive.js"></script>
+</body>
+</html>

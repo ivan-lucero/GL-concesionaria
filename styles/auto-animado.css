@@ -1,0 +1,19 @@
+.auto-animado-container {
+  overflow: hidden;
+  background-image: url("../imgs/common/LOGO-Mini-fondoClaro.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.auto-animado {
+  position: relative;
+  width: 250px;
+  transform: translateX(0%);
+}
+
+@media screen and (min-width: 1024px) {
+  .auto-animado-container {
+    padding: 0 200px;
+  }
+}

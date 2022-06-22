@@ -1,0 +1,81 @@
+.pie-pagina{
+    width: 100%;
+    background-color: #061A40;
+    margin-top: 90px;
+    font-size: 14px;
+    color: white;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.pie-pagina .grupo-1 .box .direccion {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color:white;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .box .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+
+}
+
+.pie-pagina .grupo-1 .box .telefono svg{
+    margin-right: 10px;
+}
+
+
+.pie-pagina .grupo-2{
+    background-color: #0353A4;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-2 p{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+        text-align: center;
+    }
+}
