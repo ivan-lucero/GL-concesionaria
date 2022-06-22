@@ -3,8 +3,6 @@ const inputs_testdrive = document.querySelectorAll("#form-test-drive input")
 const selects_testdrive = document.querySelectorAll("#form-test-drive select")
 const checkbox_prefcontacto = document.querySelectorAll("#preferencia-contacto")
 
-console.log(selects_testdrive)
-
 const select_dia = document.querySelector("#dia-preferencia")
 const select_horario = document.querySelector("#horario-preferencia")
 
@@ -15,8 +13,6 @@ const warning_telefono_testdrive = document.getElementById("warning-telefono-tes
 const warning_horario_testdrive = document.getElementById("warning-horario-testdrive")
 const warning_prefhorario_testdrive = document.getElementById("warning-prefhorario-testdrive")
 const warning_prefdia_testdrive = document.getElementById("warning-prefdia-testdrive")
-
-console.log(checkbox_prefcontacto[0].checked)
 
 const regExp_testdrive = {
 	name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -37,7 +33,6 @@ let valores_testdrive = {
 const validarInputs_testdrive = (input) => {
   
   if(input.name === "nombre"){
-    console.log("ENTRA")
     if(input.value.length < 2) 
     {
       input.classList.add("input-warning")
@@ -149,7 +144,6 @@ const validarCheckbox_prefcontacto = () => {
 
 const validarSelect_testdrive = (select) => {  
   
-  console.log("entra")
   if(select.name === "dia-preferencia")
   {
     if(select.value <= 0)
@@ -197,7 +191,6 @@ selects_testdrive.forEach(select => {
 
 form_testdrive.addEventListener("submit" , (e) => {
   e.preventDefault()
-  console.log(valores_testdrive)
   if(!valores_testdrive.nombre ||
      !valores_testdrive.email || 
      !valores_testdrive.telefono || 
