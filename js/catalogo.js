@@ -48,7 +48,7 @@ const mostrarAutos = (autos) => {
 }
 
 const getAutosNuevos = () => {
-  fetch("../autos-0kms.json")
+  fetch("https://ivan-lucero.github.io/GL-concesionaria/autos-0kms.json")
   .then(res => res.json())
   .then(res => {
     todos_los_autos = res
@@ -61,7 +61,7 @@ const getAutosNuevos = () => {
 }
 
 const getAutosUsados = () => {
-  fetch("../autos-usados.json")
+  fetch("https://ivan-lucero.github.io/GL-concesionaria/autos-usados.json")
   .then(res => res.json())
   .then(res => {
     todos_los_autos = res
