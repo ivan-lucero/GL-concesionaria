@@ -232,5 +232,14 @@ form_testdrive.addEventListener("submit" , (e) => {
     inputs_testdrive.forEach(input => {
       input.value = ""
     });
+
+    valores_testdrive = {
+      nombre: false,
+      email: false,
+      telefono: false,
+      dni: false,
+      prefhorario: false,
+      prefdia: false
+    }
   }
 })

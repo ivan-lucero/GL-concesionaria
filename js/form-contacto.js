@@ -148,5 +148,12 @@ form.addEventListener("submit" , (e) => {
     inputs.forEach(input => {
       input.value = ""
     });
+    valores = {
+      nombre: false,
+      email: false,
+      telefono: false,
+      horario: false,
+    }
+
   }
 })
