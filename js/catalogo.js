@@ -100,6 +100,15 @@ inputs_marcas.forEach(input => {
   input.addEventListener("click",() => filtrarAutos(todos_los_autos))
 })
 
-inputs_marcas[0].addEventListener("click",() => mostrarAutos(todos_los_autos))
+inputs_marcas[0].addEventListener("click",() => {
+  if(input_nuevos.checked)
+  {
+    getAutosNuevos()
+  }
+  if(input_usados.checked)
+  {
+    getAutosUsados()
+  }
+})
 
 getAutosNuevos()
